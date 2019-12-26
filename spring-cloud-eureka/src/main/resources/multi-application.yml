@@ -1,0 +1,39 @@
+#---
+#spring:
+#  application:
+#    name: spring-cloud-eureka
+#  profiles: eure1
+#server:
+#  port: 10086
+#eureka:
+#  instance:
+#    hostname: eure1
+#  client:
+#    serviceUrl:
+#      defaultZone: http://eure2:10087/eureka/,http://eure3:10088/eureka/
+#---
+#spring:
+#  application:
+#    name: spring-cloud-eureka
+#  profiles: eure2
+#server:
+#  port: 10087
+#eureka:
+#  instance:
+#    hostname: eure2
+#  client:
+#    serviceUrl:
+#      defaultZone: http://eure1:10086/eureka/,http://eure3:10088/eureka/
+#---
+#spring:
+#  application:
+#    name: spring-cloud-eureka
+#  profiles: eure3
+#server:
+#  port: 10088
+#eureka:
+#  instance:
+#    hostname: eure3
+#  client:
+#    serviceUrl:
+#      defaultZone: http://eure2:10087/eureka/,http://eure1:10086/eureka/

@@ -13,7 +13,7 @@ spring:
           uri: https://github.com/zharker/spring-cloud-demo
           search-paths: config-repo
           username: zharker
-          password: LU&%SM26ap
+          password:
 eureka:
   client:
     serviceUrl:
@@ -33,7 +33,7 @@ spring:
           uri: https://github.com/zharker/spring-cloud-demo
           search-paths: config-repo
           username: zharker
-          password: LU&%SM26ap
+          password:
 eureka:
   client:
     serviceUrl:

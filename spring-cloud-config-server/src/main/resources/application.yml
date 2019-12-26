@@ -1,0 +1,40 @@
+---
+server:
+  port: 10041
+spring:
+  application:
+    name: spring-cloud-config-server
+  profiles: config1
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/zharker/spring-cloud-demo
+          search-paths: config-repo
+          username: zharker
+          password: LU&%SM26ap
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka/
+---
+server:
+  port: 10042
+spring:
+  application:
+    name: spring-cloud-config-server
+  profiles: config2
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/zharker/spring-cloud-demo
+          search-paths: config-repo
+          username: zharker
+          password: LU&%SM26ap
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka/

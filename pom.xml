@@ -33,5 +33,7 @@
         <module>spring-cloud-consumer</module>
         <module>spring-cloud-hystrix</module>
         <module>spring-cloud-turbine-dashboard</module>
+        <module>spring-cloud-config-server</module>
+        <module>spring-cloud-config-client</module>
     </modules>
 </project>

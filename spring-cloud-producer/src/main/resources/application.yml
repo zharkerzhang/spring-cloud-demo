@@ -3,6 +3,11 @@ spring:
   application:
     name: spring-cloud-producer
   profiles: producer1
+  zipkin:
+    base-url: http://localhost:10061
+  sleuth:
+    sampler:
+      probability: 1
 server:
   port: 10010
 eureka:

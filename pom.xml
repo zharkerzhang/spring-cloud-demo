@@ -42,5 +42,7 @@
         <module>spring-cloud-config-client</module>
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-zipkin</module>
+        <module>spring-cloud-consul-producer</module>
+        <module>spring-cloud-consul-consumer</module>
     </modules>
 </project>

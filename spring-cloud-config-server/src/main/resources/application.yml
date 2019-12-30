@@ -14,10 +14,18 @@ spring:
           search-paths: config-repo
           username: zharker
           password:
+  rabbitmq:
+    host: localhost
+    port: 5682
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:10086/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 ---
 server:
   port: 10042
@@ -34,7 +42,15 @@ spring:
           search-paths: config-repo
           username: zharker
           password:
+  rabbitmq:
+    host: localhost
+    port: 5682
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:10086/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

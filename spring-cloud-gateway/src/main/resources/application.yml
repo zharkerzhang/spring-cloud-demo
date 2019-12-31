@@ -1,0 +1,33 @@
+server:
+  port: 10081
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: bing-route
+        uri: http://www.bing.com
+        predicates:
+        - Path=/bing
+      - id: add_request_parameter-producer-route
+        uri: lb://SPRING-CLOUD-PRODUCER
+        filters:
+        - AddRequestParameter=name, 2333
+        predicates:
+          - Method=GET
+      discovery:
+        locator:
+          enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka/
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+route:
+  baidu:
+    id: baidu-route
+    uri: http://www.baidu.com
+    path: /baidu

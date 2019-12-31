@@ -10,7 +10,6 @@
         <version>1.0.0</version>
     </parent>
 
-    <groupId>com.zharker.spring.cloud</groupId>
     <artifactId>spring-cloud-eureka</artifactId>
     <version>1.0.0</version>
 

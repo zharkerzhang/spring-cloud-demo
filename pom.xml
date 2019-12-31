@@ -44,5 +44,6 @@
         <module>spring-cloud-zipkin</module>
         <module>spring-cloud-consul-producer</module>
         <module>spring-cloud-consul-consumer</module>
+        <module>spring-cloud-gateway</module>
     </modules>
 </project>
